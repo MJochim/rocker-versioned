@@ -26,7 +26,9 @@ See [rocker/r-ver](https://github.com/rocker-org/rocker-versioned) for details.
 
     docker run -d -p 8787:8787 -e ROOT=TRUE -e PASSWORD=yourpasswordhere rocker/rstudio
 
-Link a local volume (in this example, the current working directory, `$(pwd)`) to the rstudio container:
+### Link a local volume to the rstudio container:
+
+In this example, the current working directory, `$(pwd)`:
 
     docker run -d -p 8787:8787 -v $(pwd):/home/rstudio -e PASSWORD=yourpasswordhere rocker/rstudio
 
